@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LOG-IN</title>
+
+		<meta name="keyword" content="회원가입, html">
+	</head>
+	<body>
+		<h1>LogIn</h1>
+		<hr/>
+		<form action="" method="GET">
+			<fieldset>
+				<legend>Account Info</legend>
+				<div>
+					<label for="id-account">ID</label>
+					<input type="text" name="accout" id="id-account" required="required">
+				</div>
+
+				<div>
+					<label for="id-pw1">Pass</label>
+					<input type="password" name="passwd1" id="id-pw1" required="required">
+				</div>
+
+				<div>
+					<label for="id-pw2">Pass Check</label>
+					<input type="password" name="passwd2" id="id-pw2" required="required">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Profile</legend>
+				<div>
+					<label for="id-name">
+						Name
+					</label>
+					<input type="text" name="name" id="id-name">
+				</div>
+
+				<div>
+					<label>Birth</label>
+					<input type="number" name="birth-year" placeholder="year" min="1900" max="2021">
+					<select name="birth-month">
+						<option value="">month</option>
+						<option value="1">1 month</option>
+						<option value="2">2 month</option>
+						<option value="3">3 month</option>
+						<option value="4">4 month</option>
+						<option value="5">5 month</option>
+						<option value="6">6 month</option>
+						<option value="7">7 month</option>
+						<option value="8">8 month</option>
+						<option value="9">9 month</option>
+						<option value="10">10 month</option>
+						<option value="11">11 month</option>
+						<option value="12">12 month</option>
+					</select>
+					<input type="number" name="birth-day" placeholder="day" min="1" max="31">
+				</div>
+
+				<div>
+					<label>Sex</label>
+
+					<input type="radio" name="sex" id="id-sex-male">
+					<label for="id-sex-male">male</label>
+
+					<input type="radio" name="sex" id="id-sex-female">
+					<label for="id-sex-female">female</label>
+				</div>
+			</fieldset>
+
+			<div>
+				<input type="checkbox" name="agree" id="id-agree">
+				<label for="id-agree"> 사이트 이용약관과 개인정보 수집 방침에 동의합니다.</label>
+			</div>
+			
+			<input type="submit" value="가입하기">
+		</form>
+	</body>
+</html>
